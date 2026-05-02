@@ -126,7 +126,7 @@ function createYTPlayer(playlistId, onReady, onStateChange, onError) {
       modestbranding: 0,
       rel:        0,
       shuffle:    State.config.settings?.shufflePlaylists ? 1 : 0,
-      origin:     window.location.origin || 'https://mithilaradio.netlify.app',
+      origin:     window.location.origin,
     },
     events: {
       onReady:       onReady       || (() => {}),
@@ -211,13 +211,21 @@ function handlePlayerStateChange(event, cat, pl) {
 }
 
 function handlePlayerError(event, categoryId) {
-  console.warn('YT player error:', event.data);
-  State.retryCount++;
-  if (State.retryCount <= State.maxRetries) {
-    setTimeout(() => {
-      advancePlaylist(categoryId);
-    }, 3000);
-  }
+    console.warn('YT player error:', event.data);
+    
+    // Error 150/101 means restricted. Try to skip to next video if in a playlist.
+    if (event.data === 150 || event.data === 101 || event.data === 111) {
+        try {
+            State.player.nextVideo(); 
+        } catch(e) {
+            advancePlaylist(categoryId);
+        }
+    } else {
+        State.retryCount++;
+        if (State.retryCount <= State.maxRetries) {
+            setTimeout(() => { advancePlaylist(categoryId); }, 3000);
+        }
+    }
 }
 
 function advancePlaylist(categoryId) {
@@ -477,14 +485,19 @@ function startUptimeCounter() {
 // ── CONTROLS BINDING ───────────────────────────
 function bindControls() {
   // Play/Pause
-  document.getElementById('btn-play').onclick = () => {
-    if (!State.player) return;
-    if (State.isPlaying) {
-      State.player.pauseVideo();
-    } else {
-      State.player.playVideo();
+document.getElementById('btn-play').onclick = () => {
+    // Check if player exists AND has the playVideo method
+    if (!State.player || typeof State.player.playVideo !== 'function') {
+        console.warn("Player not ready yet.");
+        return;
     }
-  };
+    
+    if (State.isPlaying) {
+        State.player.pauseVideo();
+    } else {
+        State.player.playVideo();
+    }
+};
   // Next
   document.getElementById('btn-next').onclick = () => {
     if (!State.player || State.isLive) return;
