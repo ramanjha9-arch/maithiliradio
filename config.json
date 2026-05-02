@@ -1,0 +1,110 @@
+{
+  "station": {
+    "name": "Mithila Radio",
+    "tagline": "मिथिलाक आवाज़ • Voice of Mithila",
+    "description": "24/7 Maithili Folk, Devotional & Cultural Music",
+    "logo": "🪷",
+    "whatsapp": "https://wa.me/?text=Sun%20Mithila%20Radio%20-%20Maithili%20Folk%20Music%2024%2F7%20https%3A%2F%2Fmithilaradio.netlify.app"
+  },
+  "schedule": {
+    "morning":   { "start": 5,  "end": 11, "category": "bhajan",  "label": "Pratah Bhajan" },
+    "afternoon": { "start": 11, "end": 16, "category": "folk",    "label": "Dopahar Geet" },
+    "evening":   { "start": 16, "end": 20, "category": "chhath",  "label": "Sandhya Bhajan" },
+    "night":     { "start": 20, "end": 5,  "category": "sohar",   "label": "Ratri Geet" }
+  },
+  "categories": [
+    {
+      "id": "bhajan",
+      "label": "Mithila Bhajan",
+      "labelMaithili": "भजन",
+      "icon": "🪷",
+      "color": "#f59e0b",
+      "playlists": [
+        { "id": "PLbMFMNKwTBqSrb-KFVzS-MFSx6THQZAMD", "title": "Mithila Bhajan Collection", "source": "youtube" },
+        { "id": "PLRBp0Fe2GpgnIh0AiYKh7o7HnYAej-oP5", "title": "Maithili Bhajan Sangrah", "source": "youtube" },
+        { "id": "PLf4gA4AGplBn_r-AQ00K6wLsklCx_NSFM", "title": "Sharda Sinha Bhajan", "source": "youtube" }
+      ]
+    },
+    {
+      "id": "folk",
+      "label": "Lok Geet",
+      "labelMaithili": "लोक गीत",
+      "icon": "🎵",
+      "color": "#10b981",
+      "playlists": [
+        { "id": "PLRBp0Fe2GpglK2eFXGfZbGvJHgOHagjqP", "title": "Maithili Folk Songs", "source": "youtube" },
+        { "id": "PLf4gA4AGplBkZt_-F5sSIizN4EFLkBjgp", "title": "Maithili Lok Sangeet", "source": "youtube" },
+        { "id": "PLbMFMNKwTBqSJqiPY3nXgD-eGEIpqYFCZ", "title": "Traditional Maithili", "source": "youtube" }
+      ]
+    },
+    {
+      "id": "chhath",
+      "label": "Chhath Geet",
+      "labelMaithili": "छठ गीत",
+      "icon": "🌅",
+      "color": "#f97316",
+      "playlists": [
+        { "id": "PLbMFMNKwTBqQMRMLM5sMVMmJ0Xu-qxQfm", "title": "Chhath Puja Songs", "source": "youtube" },
+        { "id": "PLRBp0Fe2GpglzFqJ0B3c3bq0O7y-w_kFa", "title": "Chhath Mahaparv Geet", "source": "youtube" },
+        { "id": "PLf4gA4AGplBkVGRlBzHV7F1dxrH7ZVcIr", "title": "Chhath Special", "source": "youtube" }
+      ]
+    },
+    {
+      "id": "sohar",
+      "label": "Sohar & Vivah",
+      "labelMaithili": "सोहर-विवाह",
+      "icon": "🎊",
+      "color": "#ec4899",
+      "playlists": [
+        { "id": "PLbMFMNKwTBqSFJ7ypbTZ8v6U3fPxnJFtM", "title": "Maithili Sohar Geet", "source": "youtube" },
+        { "id": "PLRBp0Fe2GpglzI9cjHlBq7WTxuLTaQfaD", "title": "Vivah Geet Collection", "source": "youtube" },
+        { "id": "PLf4gA4AGplBnK_hXZ3eBVrRHk6F7p-AZU", "title": "Maithili Mangal Geet", "source": "youtube" }
+      ]
+    },
+    {
+      "id": "modern",
+      "label": "Modern Maithili",
+      "labelMaithili": "आधुनिक",
+      "icon": "🎸",
+      "color": "#8b5cf6",
+      "playlists": [
+        { "id": "PLbMFMNKwTBqRF5Z2HiGxj_H3J_8fZ8YYb", "title": "New Maithili Songs 2024", "source": "youtube" },
+        { "id": "PLRBp0Fe2GpgnH9c-Fp9b_yijFMo9bNb_K", "title": "Modern Maithili Hits", "source": "youtube" },
+        { "id": "PLf4gA4AGplBk-DpMJNp3VQoLrXGBp5j0Y", "title": "Maithili Pop Songs", "source": "youtube" }
+      ]
+    }
+  ],
+  "festivalMode": {
+    "chhath": {
+      "name": "Chhath Mahaparv",
+      "active": false,
+      "category": "chhath",
+      "color": "#f97316"
+    },
+    "wedding": {
+      "name": "Vivah Season",
+      "active": false,
+      "category": "sohar",
+      "color": "#ec4899"
+    }
+  },
+  "announcements": {
+    "enabled": true,
+    "intervalMinutes": 15,
+    "messages": [
+      "Aap sun rahe hain Mithila Radio… maithili sanskriti ke dhun par jhoomein!",
+      "Swagat chhe apnar Mithila Radio me… Maithili ke swar sange rahen.",
+      "Agla geet bahut special chhe… sunta rahen!",
+      "Mithila Radio pe aap sabka swagat hai… Jai Mithila!",
+      "Yeh geet samarpan chhe apnar Mithila ke lor ke…",
+      "Hamara Mithila… hamari pehchaan… Mithila Radio pe suniye apni dharti ke geet.",
+      "Aap Mithila Radio sun rahe hain… Swargiya Madhubani ke rang aur Mithila ke sur.",
+      "Chhath ke parva me… Mithila Radio ke pranam."
+    ]
+  },
+  "settings": {
+    "autoPlaylistSwitchMinutes": 45,
+    "shufflePlaylists": true,
+    "mockListeners": { "enabled": true, "base": 847, "variance": 200 }
+  }
+}
