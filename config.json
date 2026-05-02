@@ -7,10 +7,10 @@
     "whatsapp": "https://wa.me/?text=Sun%20Mithila%20Radio%20-%20Maithili%20Folk%20Music%2024%2F7%20https%3A%2F%2Fmithilaradio.netlify.app"
   },
   "schedule": {
-    "morning":   { "start": 5,  "end": 11, "category": "bhajan",  "label": "Pratah Bhajan" },
-    "afternoon": { "start": 11, "end": 16, "category": "folk",    "label": "Dopahar Geet" },
-    "evening":   { "start": 16, "end": 20, "category": "chhath",  "label": "Sandhya Bhajan" },
-    "night":     { "start": 20, "end": 5,  "category": "sohar",   "label": "Ratri Geet" }
+    "morning":   { "start": 5,  "end": 11, "category": "bhajan",  "label": "Pratah Bhajan"   },
+    "afternoon": { "start": 11, "end": 16, "category": "folk",    "label": "Dopahar Lok Geet" },
+    "evening":   { "start": 16, "end": 20, "category": "chhath",  "label": "Sandhya Bhajan"  },
+    "night":     { "start": 20, "end": 5,  "category": "sohar",   "label": "Ratri Geet"      }
   },
   "categories": [
     {
@@ -20,9 +20,21 @@
       "icon": "🪷",
       "color": "#f59e0b",
       "playlists": [
-        { "id": "PLbMFMNKwTBqSrb-KFVzS-MFSx6THQZAMD", "title": "Mithila Bhajan Collection", "source": "youtube" },
-        { "id": "PLRBp0Fe2GpgnIh0AiYKh7o7HnYAej-oP5", "title": "Maithili Bhajan Sangrah", "source": "youtube" },
-        { "id": "PLf4gA4AGplBn_r-AQ00K6wLsklCx_NSFM", "title": "Sharda Sinha Bhajan", "source": "youtube" }
+        {
+          "id": "PLePlt4JAqndt1j5nH68-9kXDgtcZ5Tywd",
+          "title": "Maithili Shiv Bhajan — Lok Kala Kendra",
+          "source": "youtube",
+          "type": "playlist"
+        }
+      ],
+      "videos": [
+        { "id": "92tSlnvQ0lc", "title": "Sawan Maithili Shiv Bhajan 2024" },
+        { "id": "HDLXbQts0KA", "title": "Baba Kholiyo Appan Kewar — Shiv Nachari" },
+        { "id": "wXZEKz0lx-s", "title": "Bhole Baba Ke Nachari — Maithili Ganga" },
+        { "id": "5i19zjL60XA", "title": "Gauri Shiv Ke Manavati — Shivratri 2024" },
+        { "id": "8ezyhfZgBeE", "title": "Bhola Jaay Diyo Naihara — Shiv Geet" },
+        { "id": "zxiZf_brW9s", "title": "Maithili Shiv Bhajan Sawan Jukebox" },
+        { "id": "o5KckJ6bLg4", "title": "Dilip Darbhangiya Superhit Bhajan 2024" }
       ]
     },
     {
@@ -31,10 +43,15 @@
       "labelMaithili": "लोक गीत",
       "icon": "🎵",
       "color": "#10b981",
-      "playlists": [
-        { "id": "PLRBp0Fe2GpglK2eFXGfZbGvJHgOHagjqP", "title": "Maithili Folk Songs", "source": "youtube" },
-        { "id": "PLf4gA4AGplBkZt_-F5sSIizN4EFLkBjgp", "title": "Maithili Lok Sangeet", "source": "youtube" },
-        { "id": "PLbMFMNKwTBqSJqiPY3nXgD-eGEIpqYFCZ", "title": "Traditional Maithili", "source": "youtube" }
+      "playlists": [],
+      "videos": [
+        { "id": "khjTorvaYBg", "title": "Gauri Ke Aangan — Maithili Sohar" },
+        { "id": "Ruh-ZMpD_m0", "title": "Kone Nagar Se Aayel — Sohar Geet 2017" },
+        { "id": "ZKPle3aGMIE", "title": "Suruj Dev Ke Man Sau — Maithili Folk" },
+        { "id": "s2XnB-_X5zY", "title": "Top 5 Maithili Chhath Geet 2020" },
+        { "id": "1U5Sk9_ZRh4", "title": "Top 5 Maithili Chhath Geet 2023" },
+        { "id": "wXZEKz0lx-s", "title": "Bhole Baba Ke Nachari — Folk Geet" },
+        { "id": "92tSlnvQ0lc", "title": "Lok Geet Sawan 2024" }
       ]
     },
     {
@@ -44,9 +61,20 @@
       "icon": "🌅",
       "color": "#f97316",
       "playlists": [
-        { "id": "PLw9o1Ow6uuaCySD7gcelMSnGgG8C2ZjHM", "title": "Chhath Puja Songs", "source": "youtube" },
-        { "id": "PLRBp0Fe2GpglzFqJ0B3c3bq0O7y-w_kFa", "title": "Chhath Mahaparv Geet", "source": "youtube" },
-        { "id": "PLf4gA4AGplBkVGRlBzHV7F1dxrH7ZVcIr", "title": "Chhath Special", "source": "youtube" }
+        {
+          "id": "PLePlt4JAqndvPqe_-ei1aLS-44bsGE0aK",
+          "title": "Maithili Chhath Songs — Lok Kala Kendra",
+          "source": "youtube",
+          "type": "playlist"
+        }
+      ],
+      "videos": [
+        { "id": "DG8F-csoRAQ", "title": "Pahile Pahil Chhathi Maiya — Sharda Sinha" },
+        { "id": "wJ7p79QWgLg", "title": "Ganga Ji Ke Paniyan — Sharda Sinha" },
+        { "id": "s2XnB-_X5zY", "title": "Top 5 Maithili Chhath Geet 2020" },
+        { "id": "1U5Sk9_ZRh4", "title": "Top 5 Maithili Chhath Geet 2023" },
+        { "id": "ZKPle3aGMIE", "title": "Suruj Dev Ke Man Sau — Chhath 2017" },
+        { "id": "y7hrM7PouQM", "title": "Kelwa Ke Paat Par — Sharda Sinha" }
       ]
     },
     {
@@ -55,10 +83,13 @@
       "labelMaithili": "सोहर-विवाह",
       "icon": "🎊",
       "color": "#ec4899",
-      "playlists": [
-        { "id": "PLbMFMNKwTBqSFJ7ypbTZ8v6U3fPxnJFtM", "title": "Maithili Sohar Geet", "source": "youtube" },
-        { "id": "PLRBp0Fe2GpglzI9cjHlBq7WTxuLTaQfaD", "title": "Vivah Geet Collection", "source": "youtube" },
-        { "id": "PLf4gA4AGplBnK_hXZ3eBVrRHk6F7p-AZU", "title": "Maithili Mangal Geet", "source": "youtube" }
+      "playlists": [],
+      "videos": [
+        { "id": "khjTorvaYBg", "title": "Gauri Ke Aangan — Maithili Sohar" },
+        { "id": "Ruh-ZMpD_m0", "title": "Kone Nagar Se Aayel — Sohar 2017" },
+        { "id": "wXZEKz0lx-s", "title": "Bhole Baba Ke Nachari — Mangal Geet" },
+        { "id": "HDLXbQts0KA", "title": "Shiv Nachari — Vivah Geet" },
+        { "id": "5i19zjL60XA", "title": "Maithili Sohar Special 2024" }
       ]
     },
     {
@@ -67,10 +98,13 @@
       "labelMaithili": "आधुनिक",
       "icon": "🎸",
       "color": "#8b5cf6",
-      "playlists": [
-        { "id": "PLw9o1Ow6uuaCySD7gcelMSnGgG8C2ZjHM", "title": "New Maithili Songs 2024", "source": "youtube" },
-        { "id": "PLRBp0Fe2GpgnH9c-Fp9b_yijFMo9bNb_K", "title": "Modern Maithili Hits", "source": "youtube" },
-        { "id": "PLf4gA4AGplBk-DpMJNp3VQoLrXGBp5j0Y", "title": "Maithili Pop Songs", "source": "youtube" }
+      "playlists": [],
+      "videos": [
+        { "id": "92tSlnvQ0lc", "title": "Sawan Maithili Songs 2024" },
+        { "id": "5i19zjL60XA", "title": "Maithili Special Song 2024" },
+        { "id": "o5KckJ6bLg4", "title": "Superhit Maithili Songs 2024" },
+        { "id": "HDLXbQts0KA", "title": "Jyoti Priya — Maithili 2024" },
+        { "id": "zxiZf_brW9s", "title": "Maithili Jukebox Hits" }
       ]
     }
   ],
